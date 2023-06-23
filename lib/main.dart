@@ -16,7 +16,7 @@ class FirstPage extends StatelessWidget {  // stateless mean firstpage do not un
       appBar: AppBar(
         // centerTitle: true, //set the appBar title to the center of appBar
         title: const Text(
-          "HELLO",
+          "Google",
           style: TextStyle(fontSize: 20,color: Colors.black),),
           //  style:TextStyle(fontSize:20,color:Colors.blueAccent)),
       ),
@@ -31,8 +31,9 @@ class FirstPage extends StatelessWidget {  // stateless mean firstpage do not un
            children: [
 
              //Icon(Icons.sports_soccer_rounded, color: Colors.blueAccent, size: 100,),
-             Image.asset("Assets/Icons/ice dear.png"),
-           Text("Cool Man", style: TextStyle(fontSize: 35),)
+             //Image.asset("Assets/Icons/ice dear.png"),
+             Image.network("https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"),
+           Text("Google", style: TextStyle(fontSize: 35),)
            ],
 
          ),
