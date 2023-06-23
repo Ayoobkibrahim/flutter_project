@@ -15,10 +15,12 @@ class FirstPage extends StatelessWidget {  // stateless mean firstpage do not un
     return  Scaffold(
       appBar: AppBar(
         // centerTitle: true, //set the appBar title to the center of appBar
-        title: Text("HELLO"),
+        title: const Text(
+          "HELLO",
+          style: TextStyle(fontSize: 20,color: Colors.black),),
           //  style:TextStyle(fontSize:20,color:Colors.blueAccent)),
       ),
-       body:const Center (
+       body: Center (
 
 
          /// multichild widget
@@ -28,8 +30,9 @@ class FirstPage extends StatelessWidget {  // stateless mean firstpage do not un
            mainAxisAlignment: MainAxisAlignment.center, // to move the children to center of column
            children: [
 
-             Icon(Icons.sports_soccer_rounded, color: Colors.blueAccent, size: 100,),
-           Text("My Application", style: TextStyle(fontSize: 25),)
+             //Icon(Icons.sports_soccer_rounded, color: Colors.blueAccent, size: 100,),
+             Image.asset("Assets/Icons/ice dear.png"),
+           Text("Cool Man", style: TextStyle(fontSize: 35),)
            ],
 
          ),
