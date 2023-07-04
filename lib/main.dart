@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/LoginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main(){                               // to run a program
@@ -6,13 +7,13 @@ void main(){                               // to run a program
       MaterialApp(                         //default theme of our app(multiplatform support)
       debugShowCheckedModeBanner: false,   // to remove debug badge
 
-    home:FirstPage() ,                     // initial screen of our app, (home must be widget it may be stateless / statefull)
+    home:LoginPage() ,                     // initial screen of our app, (home must be widget it may be stateless / statefull)
   ));
 
 }
 
 
-class FirstPage extends StatelessWidget {  // stateless mean firstpage do not undrgo any state change
+class LoginPage extends StatelessWidget {  // stateless mean firstpage do not undrgo any state change
   @override
   Widget build(BuildContext context) {     // to create a widget tree (build context-> to monitor the widgets in the widget tree)
     return  Scaffold(

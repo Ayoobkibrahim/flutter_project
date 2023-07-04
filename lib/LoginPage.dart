@@ -3,8 +3,13 @@ import 'package:flutter_project/Home%20page.dart';
 import 'package:flutter_project/Registraion%20Page.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  String username="Ayoob";
+  String password="Ayoob123";
 
+  //for fetching
+
+  final uname = TextEditingController();
+  final pass  = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,6 +20,7 @@ class LoginPage extends StatelessWidget {
        Padding(
          padding: const EdgeInsets.all(12.0),
          child: TextField(
+           controller: uname,
            decoration:InputDecoration(
                border: OutlineInputBorder(
                  borderRadius: BorderRadius.circular(30)
@@ -30,6 +36,7 @@ class LoginPage extends StatelessWidget {
        Padding(
            padding: const EdgeInsets.only(left: 12,bottom: 12),
       child: TextField(
+        controller: pass,
         obscureText: true,
         obscuringCharacter: "*",
         decoration: InputDecoration(
@@ -44,16 +51,28 @@ class LoginPage extends StatelessWidget {
         ),
         ),
       ),
-
-
       ElevatedButton(
           onPressed: (){
-            Navigator.of(context).push(MaterialPageRoute(
-                builder:(context)=>HomePage()));
+            if(uname.text != "" && pass.text != "") {
+              if (uname.text == username && pass.text == password) {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HomePage()));
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  content: Text("Email/Password is incorrect"),
+                  backgroundColor: Colors.red,
+                ));
+              }
+            } else {
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                content: Text("Fields  must not be Empty"),
+                backgroundColor: Colors.red,
+              ));
+            }
           }, child: const Text("Login")),
       TextButton(onPressed: (){
         Navigator.of(context).push(MaterialPageRoute(
-            builder: (context)=>RegistaionPage()));
+            builder: (context)=>RegistrationPage()));
       }, child: Text("Not a user!!!! Register Here"))
     ],
     ),
