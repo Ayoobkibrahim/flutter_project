@@ -51,7 +51,7 @@ class _SplashState extends State<Splash> { // initial state of Splash
           child:Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("Assets/Icons/ice dear.png",
+              Image.asset("assets/Icons/ice dear.png",
                 height: 200,width: 200,),
               Text(
                 "Ice Dear",

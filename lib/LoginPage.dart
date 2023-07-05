@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
     appBar:AppBar(title:  Text("Login page"),),
     body:Column(
     children: [
-      Image.asset("Assets/Icons/dog icon.png", height: 100, width: 100),
+      Image.asset("assets/icons/panda.png", height: 100, width: 100),
        Padding(
          padding: const EdgeInsets.all(12.0),
          child: TextField(

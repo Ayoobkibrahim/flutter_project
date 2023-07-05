@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/Assignment/contacts.dart';
 import 'package:flutter_project/LoginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,7 +8,7 @@ void main(){                               // to run a program
       MaterialApp(                         //default theme of our app(multiplatform support)
       debugShowCheckedModeBanner: false,   // to remove debug badge
 
-    home:LoginPage() ,                     // initial screen of our app, (home must be widget it may be stateless / statefull)
+    home:Contacts() ,                     // initial screen of our app, (home must be widget it may be stateless / statefull)
   ));
 
 }
@@ -59,7 +60,7 @@ class LoginPage extends StatelessWidget {  // stateless mean firstpage do not un
              children: [
 
                //Icon(Icons.sports_soccer_rounded, color: Colors.blueAccent, size: 50,),
-               Image.asset("Assets/Icons/ice dear.png",
+               Image.asset("",
                height: 200,width: 200,),
 
 
