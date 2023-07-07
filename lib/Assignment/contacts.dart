@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class Contacts extends StatelessWidget {
@@ -9,7 +9,7 @@ class Contacts extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(title: const Text("Contacts"),),
       body:  ListView(
-        children: [
+        children:const [
            Card(
              child: ListTile(
               leading: CircleAvatar(backgroundImage: AssetImage("assets/icons/man_man.png")),

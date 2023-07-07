@@ -38,7 +38,7 @@ class _SplashState extends State<Splash> { // initial state of Splash
         decoration: const BoxDecoration(
            image: DecorationImage(
             fit: BoxFit.fill,
-            image:  AssetImage("Assets/images/bird.jpg")),
+            image:  AssetImage("assets/images/gradient.jpg")),
             gradient: LinearGradient(
                 colors: [
                   Colors.blue,
@@ -51,10 +51,10 @@ class _SplashState extends State<Splash> { // initial state of Splash
           child:Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("assets/Icons/ice dear.png",
+              Image.asset("assets/icons/panda.png",
                 height: 200,width: 200,),
               Text(
-                "Ice Dear",
+                "PANDA",
                 style: GoogleFonts.lobster(fontSize: 50,color: Colors.black),
               ),
             ],
