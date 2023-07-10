@@ -23,7 +23,8 @@ class Whatsapp extends StatelessWidget {
           Icon(Icons.search),
           SizedBox(width: 10),
           Icon(Icons.more_vert),
-          SizedBox(width: 10)
+          SizedBox(width: 10),
+
         ],
       ),
       body: ListView(
