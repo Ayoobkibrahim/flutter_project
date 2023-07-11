@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(MaterialApp(home: ListView2(),));
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+      home: ListView2(),));
 }
 class ListView2 extends StatelessWidget {
  var Names=[
@@ -16,7 +18,7 @@ class ListView2 extends StatelessWidget {
       appBar: AppBar(
         title: Text("ListView Builder"),
       ),
-      body: ListView.builder(itemCount:3,
+      body: ListView.builder(itemCount:Names.length,
           itemBuilder:(context,index){
         return Card(
         child: ListTile(
